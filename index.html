@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Aprendendo JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-logo">
+                <h1>Curso JS</h1>
+                <div class="menu-menu-mobile"><i class="fas fa-bars"></i></div>
+            </div>
+            <nav class="menu-nav" id="nav-main">
+                <ul>
+                    <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+                    <li><i class="fas fa-chart-line"></i><a href="#">Relatórios</a></li>
+                    <li><i class="far fa-address-card"></i><a href="#">Usuários</a></li>
+                    <li><i class="fas fa-laptop"></i><a href="#">Equipamentos</a></li>
+                    <li><i class="fas fa-credit-card"></i><a href="#">Vendas</a></li>
+                    <li><i class="fas fa-calendar-alt"></i><a href="#">Eventos</a></li>
+                    <li><i class="far fa-address-card"></i><a href="#">Usuários</a></li>
+                    <li><i class="fas fa-laptop"></i><a href="#">Equipamntos</a></li>
+                    <li><i class="fas fa-credit-card"></i><a href="#">Vendas</a></li>
+                    <li><i class="fas fa-calendar-alt"></i><a href="#">Eventos</a></li>
+                    <li><i class="far fa-address-card"></i><a href="#">Usuários</a></li>
+                    <li><i class="fas fa-sign-out-alt"></i><a href="#">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="main-header">
+                <div class="header-user">
+                    <p><i class="fas fa-user"></i><span>Curso JS</span></p>
+                </div>
+                <div class="header-mail">
+                    <p><i class="far fa-envelope"></i><span>contato@contato.com.br</span></p>
+                </div>
+                <div class="header-notification">
+                    <p>Alertas <i class="far fa-bell"></i><span>3</span></p>
+                </div>
+                <div class="header-search">
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                    <input type="text" placeholder="Pesquisar">
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="main-main">
+                    <div class="main-main-welcome">
+                        <h2>Principais noticias da semana</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            software like Aldus PageMaker includi</p>
+                    </div>
+                    <div class="main-main-duplicate">
+                        <div class="main-main-duplicate1">
+                            <h2>Relatório detalhado</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        <div class="main-main-duplicate2">
+                            <h2>Radar da evolução</h2>
+                            <ul>
+                                <li><i class="fas fa-plus-square"></i> U$ 300.000 sales</li>
+                                <li><i class="fas fa-plus-square"></i> 29 clients</li>
+                                <li><i class="fas fa-plus-square"></i> 2 new projects</li>
+                                <li><i class="fas fa-plus-square"></i> 158 ativations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-main-email">
+                        <input type="text" placeholder="Digite seu e-mail para receber as novidades" required>
+                        <input type="button" value="Enviar mensagem" />
+                    </div>
+                </div>
+                <div class="main-aside">
+                    <div class="main-aside-content">
+                        <h4>Radar da evolução</h4>
+                        <hr>
+                        <div class="main-aside-content-item">
+                            <div class="circle"></div>
+                            <div class="title">Inclusao de Processo</div>
+                            <div class="hour">Cerca de 5 minutos | 08:35hs</div>
+                            <small>Autor: Curso JS</small>
+                        </div>
+                        <div class="main-aside-content-item">
+                            <div class="circle"></div>
+                            <div class="title">Inclusao de Processo</div>
+                            <div class="hour">Cerca de 5 minutos | 08:35hs</div>
+                            <small>Autor: Curso JS</small>
+                        </div>
+                        <div class="main-aside-content-item">
+                            <div class="circle"></div>
+                            <div class="title">Inclusao de Processo</div>
+                            <div class="hour">Cerca de 5 minutos | 08:35hs</div>
+                            <small>Autor: Curso JS</small>
+                        </div>
+                        <div class="main-aside-content-item">
+                            <div class="circle"></div>
+                            <div class="title">Inclusao de Processo</div>
+                            <div class="hour">Cerca de 5 minutos | 08:35hs</div>
+                            <small>Autor: Curso JS</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.menu-menu-mobile').addEventListener('click', () => {
+            let status = document.querySelector('.menu-nav');
+            if (status.style.height != '43rem') {
+                status.style.height = '43rem';
+            } else {
+                status.style.height = '0';
+            }
+        });
+    </script>
+</body>
+
+</html>
